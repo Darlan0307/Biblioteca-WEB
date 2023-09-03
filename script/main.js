@@ -1,3 +1,36 @@
+//TODO Catalogo de todas as imagens
+
+const catalogo = [
+    {'id':1,'imagem':'fabula-1.jpg','genero':'fabula'},
+    {'id':2,'imagem':'fabula-2.jpg','genero':'fabula'},
+    {'id':3,'imagem':'fabula-3.jpg','genero':'fabula'},
+    {'id':4,'imagem':'fabula-4.jpg','genero':'fabula'},
+    {'id':5,'imagem':'fantasia-1.jpg','genero':'fantasia'},
+    {'id':6,'imagem':'fantasia-2.jpg','genero':'fantasia'},
+    {'id':7,'imagem':'fantasia-3.jpg','genero':'fantasia'},
+    {'id':8,'imagem':'fantasia-4.jpg','genero':'fantasia'},
+    {'id':9,'imagem':'fantasia-5.jpg','genero':'fantasia'},
+    {'id':10,'imagem':'ficcao-1.jpg','genero':'ficcao'},
+    {'id':11,'imagem':'ficcao-2.jpg','genero':'ficcao'},
+    {'id':12,'imagem':'ficcao-3.jpg','genero':'ficcao'},
+    {'id':13,'imagem':'ficcao-4.jpg','genero':'ficcao'},
+    {'id':14,'imagem':'ficcao-5.jpg','genero':'ficcao'},
+    {'id':15,'imagem':'romance-1.jpg','genero':'romance'},
+    {'id':16,'imagem':'romance-2.jpg','genero':'romance'},
+    {'id':17,'imagem':'romance-3.jpg','genero':'romance'},
+    {'id':18,'imagem':'romance-4.jpg','genero':'romance'},
+    {'id':19,'imagem':'romance-5.jpg','genero':'romance'},
+    {'id':20,'imagem':'terror-1.jpg','genero':'terror'},
+    {'id':21,'imagem':'terror-2.jpg','genero':'terror'},
+    {'id':22,'imagem':'terror-3.jpg','genero':'terror'},
+    {'id':23,'imagem':'terror-4.jpg','genero':'terror'},
+    {'id':24,'imagem':'terror-5.jpg','genero':'terror'},
+];
+
+
+
+
+
 //* Carrossel
 const containerCarrossel = document.querySelector('.container-carrossel');
 const imagens = document.querySelectorAll('.container-carrossel img');
