@@ -59,3 +59,22 @@ function fecharMenu(){
 
 document.getElementById('open-options').addEventListener('click',abrirMenu);
 document.querySelector('.close-options').addEventListener('click',fecharMenu);
+
+//* Campo do código de ADM
+
+function verificarUsuario(){
+    const senhaCorreta = "123456";
+    const senhaTeste = prompt("Digite a senha do ADM");
+
+    if(senhaTeste === senhaCorreta){
+        alert("Senha correta! Redirecionando para o link específico...");
+        
+        window.location.href = "https://github.com/Darlan0307/Biblioteca-WEB";
+    }else{
+        alert("senha incorreta");
+    }
+
+}
+
+document.getElementById('codigo-fonte').addEventListener('click',verificarUsuario);
+
