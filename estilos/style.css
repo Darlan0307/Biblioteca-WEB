@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+:root{
+    --font1: 'Roboto', sans-serif;
+    --font2: 'Kalam', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font1);
+}
+i{
+    font-size: 50px;
+    color: brown;
+}
