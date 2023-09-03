@@ -17,16 +17,21 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font1);
+    color: white;
 }
 
 body{
-    height: 100vh;
-    background-color: var(--CinzaClaro);
+    height: 100%;
+    background: linear-gradient(to right,#0074d9,#2a4b7c,#001f3f) no-repeat;
+
+    background-size: 300% 300%;
+    background-position: 100% 50%;
+    animation: gradient 12s ease-in-out infinite alternate;
 }
 
 header{
     padding: 10px 30px;
-    background-color: var(--azulnoite);
+    background-color: var(--azulescuro);
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -69,7 +74,7 @@ header{
 .apresentacao{ 
     display: flex;
     flex-flow: row wrap;
-    background-color: var(--azulnoite);
+    background-color: var(--azulescuro);
     justify-content: space-around;
     padding: 10px;
     color: white;
@@ -117,6 +122,7 @@ header{
     width: 80vw;
     height: 80vh;
     margin: 0 auto;   
+    margin-bottom: 6rem;
     
 }
 .titulo-carrossel{
@@ -135,6 +141,47 @@ header{
     height: 80vh;
     width: 320px;
     
+}
+
+/* Sobre */
+
+.info{
+    
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.info img{
+    width: 300px;
+    border-radius: 15px;
+    
+}
+
+.sobre-img{
+    position: relative;
+}
+.sobre-img h3{
+    color: white;
+    
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.info p{
+
+   max-width: 400px;
+   line-height: 2rem;
+   font-size: 22px;
+  
 }
 
 /* Menu de outras opções */
@@ -185,4 +232,23 @@ header{
 
 .menu-options div button:hover{
     background-color: var(--azuleletrico);
+}
+
+
+
+
+/* Animações */
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
 }
