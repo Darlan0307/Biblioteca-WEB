@@ -127,7 +127,7 @@ header{
 .carrossel{
     overflow: hidden;
     width: 80vw;
-    height: 90vh;
+    height: 700px;
     margin: 0 auto;   
     margin-bottom: 6rem;
     
@@ -145,7 +145,7 @@ header{
 }
 
 .container-carrossel img{
-    height: 80vh;
+    height: 600px;
     width: 400px;
     border: 2px solid white;
 }

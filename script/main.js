@@ -42,7 +42,7 @@ function slider(){
     if(contador > 3){
         contador = 0;
     }
-    containerCarrossel.style.transform = `translateX(${-contador * 35}vw)`
+    containerCarrossel.style.transform = `translateX(${-contador * 800}px)`
 }
 setInterval(slider,3000);
 
