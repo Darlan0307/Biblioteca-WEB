@@ -39,10 +39,10 @@ let contador = 0;
 
 function slider(){
     contador++;
-    if(contador > 4){
+    if(contador > 3){
         contador = 0;
     }
-    containerCarrossel.style.transform = `translateX(${-contador * 40}vw)`
+    containerCarrossel.style.transform = `translateX(${-contador * 35}vw)`
 }
 setInterval(slider,3000);
 
