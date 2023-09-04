@@ -196,7 +196,7 @@ header{
     justify-content: center;
     align-items: center;
     border-left: 2px solid white;
-    background-color: var(--azulnoite);
+    background-color: var(--azulescuro);
     transition: all .6s;
 }
 
