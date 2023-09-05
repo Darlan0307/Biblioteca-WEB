@@ -12,8 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- Icones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Carrossel -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <!-- Script -->
     <script src="script/main.js" defer></script>
+    <!-- carrossel -->
+    
 </head>
 <body>
     <div class="help">
@@ -32,14 +39,12 @@
         <img src="assents/logo/logo2.jpg" alt="Logo do site" class="logo">
         <nav class="menu">
             <a href="#sobre">Sobre</a>
-            <a href="#missao">Missão</a>
-            <a href="#colecao">Coleção</a>
-            <a href="#">Livros</a>
+            <a href="#livros">Livros</a>
             <a href="#contato">Contatos</a>
         </nav>
 
         <div class="cadastro">
-            <button>Cadastrar</button>
+            <button class="botao-generico">Cadastrar</button>
             <!-- <i class="fa-solid fa-user"></i> -->
             <i class="fa-regular fa-user"></i>
         </div>
@@ -53,7 +58,7 @@
                 <h1><span class="cor1">The</span> <br> <span class="cor2">House</span> <br><span class="cor3">Books</span></h1>
                 <p>" A biblioteca é a nossa casa, aqui você vive mil vidas em uma só "</p>
             </article>
-            <div class="apresentacao-imagem"><img src="assents/logo/logo.jpg" alt="imagem apresentacao" ></div>           
+            <div class="apresentacao-imagem"><img src="assents/logo/logo2.jpg" alt="imagem apresentacao" ></div>           
         </section>
         <section class="carrossel">
             <h2 class="titulo-carrossel">Novidades</h2>
@@ -63,13 +68,176 @@
                 <img src="assents/img/ficcao-1.jpg" alt="imagem 3">
                 <img src="assents/img/romance-1.jpg" alt="imagem 4">
                 <img src="assents/img/terror-1.jpg" alt="imagem 5">
-                <img src="assents/img/romance-5.jpg" alt="imagem 6">
+                <img src="assents/img/romance-2.jpg" alt="imagem 6">
                 <img src="assents/img/fantasia-2.jpg" alt="imagem 7">
-                <img src="assents/img/ficcao-3.jpg" alt="imagem 8">
-                <img src="assents/img/romance-4.jpg" alt="imagem 9">
-                <img src="assents/img/terror-3.jpg" alt="imagem 10">
+                <img src="assents/img/ficcao-2.jpg" alt="imagem 8">
+                <img src="assents/img/romance-3.jpg" alt="imagem 9">
+                <img src="assents/img/terror-2.jpg" alt="imagem 10">
+                <img src="assents/img/romance-5.jpg" alt="imagem 6">
+                <img src="assents/img/fantasia-5.jpg" alt="imagem 7">
+                <img src="assents/img/ficcao-5.jpg" alt="imagem 8">
+                <img src="assents/img/romance-5.jpg" alt="imagem 9">
+                <img src="assents/img/terror-5.jpg" alt="imagem 10">
             </div>
+            
         </section>
+        <h2 class="titulo-slider" id="livros">Encontre o seu livro</h2>
+        <section class="slider">
+            <span>Fabulas</span>
+            <button class="botao-generico receber-livro">Receber livro</button>               
+            <div class="swiper"> 
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="assents/img/fantasia-1.jpg" alt="fantasia 01">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="assents/img/fantasia-2.jpg" alt="fantasia 02">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="assents/img/fantasia-3.jpg" alt="fantasia 03">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="assents/img/fantasia-4.jpg" alt="fantasia 04">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="assents/img/fantasia-5.jpg" alt="fantasia 05">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              
+              </div>
+        </section>
+        <section class="slider">
+            <span>Ficção</span>
+            <button class="botao-generico receber-livro">Receber livro</button>
+            <div class="swiper">                
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="assents/img/ficcao-1.jpg" alt="fantasia 01">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="assents/img/ficcao-2.jpg" alt="fantasia 02">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="assents/img/ficcao-3.jpg" alt="fantasia 03">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="assents/img/ficcao-4.jpg" alt="fantasia 04">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="assents/img/ficcao-5.jpg" alt="fantasia 05">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              
+              </div>
+        </section>
+        <section class="slider">
+            <span>Terror</span>
+            <button class="botao-generico receber-livro">Receber livro</button>
+            <div class="swiper">                
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="assents/img/terror-1.jpg" alt="fantasia 01">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="assents/img/terror-2.jpg" alt="fantasia 02">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="assents/img/terror-3.jpg" alt="fantasia 03">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="assents/img/terror-4.jpg" alt="fantasia 04">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="assents/img/terror-5.jpg" alt="fantasia 05">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              
+              </div>
+        </section>
+        <section class="slider">
+            <span>Romance</span>
+            <button class="botao-generico receber-livro">Receber livro</button>
+            <div class="swiper">   
+                             
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="assents/img/romance-1.jpg" alt="fantasia 01">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="assents/img/romance-2.jpg" alt="fantasia 02">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="assents/img/romance-3.jpg" alt="fantasia 03">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="assents/img/romance-4.jpg" alt="fantasia 04">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="assents/img/romance-5.jpg" alt="fantasia 05">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              
+              </div>
+        </section>
+
+
+        <h2 class="titulo-carrossel" style="margin-bottom: 5%;">Conheça nossa Organização</h2>
         <section class="info" id="sobre">
             <div class="sobre-img">
                 <img src="assents/outros/bg-2.jpg" alt="bg-2">
@@ -96,9 +264,9 @@
         <div class="campo-social">
                     <p>Siga-nos em nossas Redes Socias</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/thehousebooks" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/TheHouseBooks" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        
                     </div>
         </div>
         <div class="campo-form">
@@ -112,5 +280,6 @@
     <footer>
         <p>&copy;TheHouseBooks equipe ADS2MA</p> 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body> 
 </html>

@@ -43,6 +43,38 @@ header{
     z-index: 9;
 }
 
+.cadastro{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.cadastro i{
+    font-size: 25px;
+}
+
+.botao-generico{
+    background-color: #1986ca;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.botao-generico:active{
+    transform: scale(.8);
+}
+
+.receber-livro{
+    position: absolute;
+    bottom: 0;
+
+}
+
+
 .logo{
     width: 100px;
     border-radius: 15px;
@@ -159,6 +191,7 @@ header{
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    margin-bottom: 5rem;
 }
 .info img{
     width: 300px;
@@ -340,6 +373,53 @@ header{
 
 .help i:hover{
     animation: kick2 .1s ease-out infinite alternate;
+}
+
+/* slider */
+.titulo-slider{
+    text-align: center;
+    font-size: 35px;
+}
+
+.slider{
+    margin: 0 auto;
+    height: 700px;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slider span{
+    font-size: 25px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-family: var(--font2);
+}
+
+.slider img{
+    box-shadow: 0 1px 2px #0003;
+    width: 30%;
+}
+
+.swiper{
+    height: 500px;
+}
+
+.swiper-slide{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:450px){
+    .swiper{
+        height: 270px;
+    }
 }
 
 
