@@ -1,3 +1,17 @@
+//*slider
+var swiper = new Swiper(".swiper",{
+    cssMode: true,
+    loop: true,
+    navigation:{
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination:{
+        el: ".swiper-pagination",
+    },
+    Keyboard: true,
+});
+
 //TODO Catalogo de todas as imagens
 
 const catalogo = [
@@ -39,12 +53,12 @@ let contador = 0;
 
 function slider(){
     contador++;
-    if(contador > 3){
+    if(contador > 4){
         contador = 0;
     }
     containerCarrossel.style.transform = `translateX(${-contador * 800}px)`
 }
-setInterval(slider,3000);
+setInterval(slider,2000);
 
 
 //* Menu lateral
@@ -78,17 +92,6 @@ function verificarUsuario(){
 
 document.getElementById('codigo-fonte').addEventListener('click',verificarUsuario);
 
-//*slider
-var swiper = new Swiper(".swiper",{
-    cssMode: true,
-    loop: true,
-    navigation:{
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    pagination:{
-        el: ".swiper-pagination",
-    },
-    Keyboard: true,
-});
+
+
 
