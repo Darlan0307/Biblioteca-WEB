@@ -271,6 +271,52 @@ header{
 .menu-options div button:hover{
     background-color: var(--azuleletrico);
 }
+/* Informações */
+
+.informacoes{
+    margin: 4rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightblue;
+    padding: 15px;
+    width: 100%;
+}
+
+.informacoes-titulo{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--azuleletrico);
+}
+
+.informacoes div{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background-color: var(--azulescuro);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s;
+}
+
+.informacoes div p{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.informacoes div p span{
+    color: var(--azuleletrico);
+    font-size: 30px;
+}
+
+.informacoes div:hover{
+    transform: scale(1.1);
+    background-color: var(--azulnoite);
+}
+
 
 /* Campo Extra */
 
