@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/adm.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Script -->
+    <script src="script/adm.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="index.html" target="_self" rel="prev" style="font-size: x-large;">Voltar</a>           
+        </nav>
+        <h1 class="titulo">Página Administrativa</h1>
+        <img src="assents/logo/logo2.jpg" alt="Logo do site" class="logo">
+    </header>
+    <main>
+        <div id="campo-senha"  class="flex ">
+            <h3>Digite a senha do Administrador</h3>
+            <input type="password" name="senha" id="senha" placeholder="******" required>
+            <button id="botao-senha">Entrar</button>
+        </div>
+        <div id="campo-configuracoes" class="flex hidden">
+            <button id="add-livro">Adicionar livro</button>
+            <button id="ver-estoque">Verificar estoque</button>
+            
+        </div>
+    </main>    
+</body> 
+</html>

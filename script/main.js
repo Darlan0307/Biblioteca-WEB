@@ -41,10 +41,6 @@ const catalogo = [
     {'id':24,'imagem':'terror-5.jpg','genero':'terror'},
 ];
 
-
-
-
-
 //* Carrossel
 const containerCarrossel = document.querySelector('.container-carrossel');
 const imagens = document.querySelectorAll('.container-carrossel img');
