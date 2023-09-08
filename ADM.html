@@ -25,15 +25,43 @@
         <img src="assents/logo/logo2.jpg" alt="Logo do site" class="logo">
     </header>
     <main>
-        <div id="campo-senha"  class="flex ">
+        <div id="campo-senha"  class="flex">
             <h3>Digite a senha do Administrador</h3>
             <input type="password" name="senha" id="senha" placeholder="******" required>
             <button id="botao-senha">Entrar</button>
         </div>
         <div id="campo-configuracoes" class="flex hidden">
             <button id="add-livro">Adicionar livro</button>
+            <form id="form-addlivro" class="form-infoLivro hidden">
+                <label for="nome-livro">Nome do livro:</label>
+                <input type="text" name="nome-livro" id="nome-livro" required placeholder="ex: Miranha" autocomplete="none">
+                <label for="genero-livro">Gênero do livro:</label>
+                <input type="text" name="genero-livro" id="genero-livro" required placeholder="ex: Ação" autocomplete="none">
+                <label for="arquivo-livro">PDF do livro:</label>
+                <input type="file" name="arquivo-livro" id="arquivo-livro" required>
+                <button id="Adicionar-livro" type="submit">Adicionar</button>
+            </form>
             <button id="ver-estoque">Verificar estoque</button>
-            
+            <section id="estoquelivro" class="hidden">
+                <p>
+                    Atualmente temos 24 livros.
+                </p>
+                <p>
+                    <span>Terror: </span>5
+                </p>
+                <p>
+                    <span>Fabula: </span>4
+                </p>
+                <p>
+                    <span>Fantasia: </span>5
+                </p>
+                <p>
+                    <span>Romance: </span>5
+                </p>
+                <p>
+                    <span>Ficção: </span>5
+                </p>
+            </section>
         </div>
     </main>    
 </body> 

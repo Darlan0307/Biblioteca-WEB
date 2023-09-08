@@ -21,3 +21,22 @@ const verificarSenha = () => {
 
 
 document.getElementById('botao-senha').addEventListener('click',verificarSenha);
+
+
+// Botao adicionar livro e Verificar Estoque
+
+const campoAddLivro = document.getElementById('form-addlivro')
+const campoEstoque = document.getElementById('estoquelivro')
+
+function abrirCampoAddLivro(){
+    campoAddLivro.classList.toggle('hidden')
+    campoEstoque.classList.add('hidden');
+}
+
+function abrirCampoEstoque(){
+    campoEstoque.classList.toggle('hidden');
+    campoAddLivro.classList.add('hidden')
+}
+
+document.getElementById('add-livro').addEventListener('click',abrirCampoAddLivro);
+document.getElementById('ver-estoque').addEventListener('click',abrirCampoEstoque);
