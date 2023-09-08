@@ -50,7 +50,7 @@ header{
 }
 
 .cadastro i{
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .botao-generico{
@@ -62,6 +62,7 @@ header{
     border-radius: 15px;
     cursor: pointer;
     transition: all .5s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .botao-generico:active{
@@ -110,6 +111,8 @@ header{
     background-color: var(--azulescuro);
     justify-content: space-around;
     padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
 }
 .apresentacao-titulo{
     display: flex;
@@ -134,6 +137,7 @@ header{
     width: 300px;
     transition: all 1s;
     border-radius: 30px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .apresentacao-imagem img:hover{
@@ -302,7 +306,9 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     transition: all .4s;
+
 }
 
 .informacoes div p{
@@ -384,9 +390,10 @@ header{
     outline: none;
     background-color: lightblue;
     transition: all .5s;
+    font-size: 20px;
 }
 .form input:focus{
-    border: 3px solid black;
+    border: 3px solid #001f3f;
     transform: scale(1.2);
 }
 
@@ -415,16 +422,6 @@ header{
     cursor: pointer;
     border-radius: 10px;
 }
-
-.help i{
-    font-size: 40px;
-    animation: kick .5s ease-out infinite alternate;
-}
-
-.help i:hover{
-    animation: kick2 .1s ease-out infinite alternate;
-}
-
 /* slider */
 .titulo-slider{
     text-align: center;
@@ -513,5 +510,60 @@ footer p{
 @keyframes kick2{
     100%{
         transform: translateY(-20%);
+    }
+}
+
+
+/* Botão Css externo */
+
+/* CSS */
+.button-64 {
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .button-64:active,
+  .button-64:hover {
+    outline: 0;
+  }
+  
+  .button-64 span {
+    /* background-color: rgb(5, 6, 45); */
+    background-color: #0074d9;
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+    color: white;
+  }
+  
+  .button-64:hover span {
+    background: none;
+  }
+  
+  @media (min-width: 768px) {
+    .button-64 {
+      font-size: 24px;
+      min-width: 196px;
     }
 }

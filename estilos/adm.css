@@ -24,6 +24,7 @@ main{
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 #campo-senha{
@@ -35,7 +36,7 @@ main{
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.459);
     width: 70%;
     max-width: 500px;
-    
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 #campo-senha h3{
@@ -173,3 +174,4 @@ main{
 .hidden{
     display: none;
 }
+
