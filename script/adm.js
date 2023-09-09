@@ -40,3 +40,9 @@ function abrirCampoEstoque(){
 
 document.getElementById('add-livro').addEventListener('click',abrirCampoAddLivro);
 document.getElementById('ver-estoque').addEventListener('click',abrirCampoEstoque);
+
+
+
+
+// Campo cadastro
+

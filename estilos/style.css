@@ -30,6 +30,8 @@ body{
     animation: gradient 12s ease-in-out infinite alternate; */
 }
 
+
+
 header{
     padding: 10px 30px;
     background-color: var(--azulescuro);
@@ -373,14 +375,14 @@ header{
     font-size: 22px;
 }
 
-.form{
+.form2{
     padding: 10px;
     display: flex;
     gap: 2rem;
     align-items: center;
 }
 
-.form input{
+.form2 input{
     height: 30px;
     width: 250px;
     border: none;
@@ -392,12 +394,12 @@ header{
     transition: all .5s;
     font-size: 20px;
 }
-.form input:focus{
+.form2 input:focus{
     border: 3px solid #001f3f;
     transform: scale(1.2);
 }
 
-.form button{
+.form2 button{
     background-color: #001f3f;
     color: white;
     font-weight: bold;
@@ -408,20 +410,11 @@ header{
     transition: all .5s;
 }
 
-.form button:hover{
+.form2 button:hover{
     background-color: var(--azuleletrico);
     transform: scale(1.1);
 }
 
-.help{
-    position: fixed;
-    right: 2rem;
-    bottom: 4rem;
-    background-color: var(--azulescuro);
-    padding: 10px 10px 2px 10px;
-    cursor: pointer;
-    border-radius: 10px;
-}
 /* slider */
 .titulo-slider{
     text-align: center;
@@ -567,3 +560,138 @@ footer p{
       min-width: 196px;
     }
 }
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: royalblue;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: royalblue;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .submit:hover {
+    background-color: rgb(56, 90, 194);
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
+
+
