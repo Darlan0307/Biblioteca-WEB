@@ -89,5 +89,67 @@ function verificarUsuario(){
 document.getElementById('codigo-fonte').addEventListener('click',verificarUsuario);
 
 
+// Campo cadastro
 
+const campoCadastro = document.querySelector('.campo-cadastro')
+
+function closeFieldRegister(){
+    campoCadastro.classList.add('hidden');
+}
+
+function openFieldRegister(){
+    campoCadastro.classList.remove('hidden');
+}
+
+document.getElementById('close-cadastro').addEventListener('click',closeFieldRegister);
+document.getElementById('abrir-cadastro').addEventListener('click',openFieldRegister);
+
+// Campo login
+
+const campoLogin = document.querySelector('.campo-login')
+
+// close-login  abrir-login
+function closeFieldLogin(){
+    campoLogin.classList.add('hidden');
+}
+
+function openFieldLogin(){
+    campoLogin.classList.remove('hidden');
+}
+
+document.getElementById('close-login').addEventListener('click',closeFieldLogin);
+document.getElementById('abrir-login').addEventListener('click',openFieldLogin);
+
+
+
+
+
+
+
+
+
+
+// Verificando o cadastro
+
+let temCadastro = 0;
+
+function recebendoCadastro(){
+    temCadastro = 1;
+}
+
+document.querySelector('.form').addEventListener('subimt',(e) => {
+    e.preventDefault();
+
+    recebendoCadastro();
+});
+
+let btnsReceberLivro = document.querySelectorAll('.receber-livro');
+
+function verificarCadastro(){
+    
+   alert("Seu livro chegará em breve no seu email");
+
+}
+
+btnsReceberLivro.forEach(btn => btn.addEventListener('click', verificarCadastro));
 

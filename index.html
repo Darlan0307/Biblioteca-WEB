@@ -23,49 +23,85 @@
     
 </head>
 <body>
-    
-        <form class="form ">
-            <p class="title">Register </p>
-            <p class="message">Signup now and get full access to our app. </p>
-                <div class="flex">
+        <div class="campo-cadastro hidden">
+            <i class="fa-solid fa-circle-xmark" id="close-cadastro"></i>
+            <form class="form">
+                <p class="title">Cadastro</p>
+                <p class="message">Preencha os campos corretamente</p>
+                    <div class="flex">
+                    <label>
+                        <input required="" placeholder="" type="text" class="input" autocomplete="none">
+                        <span>Nome</span>
+                    </label>
+            
+                    <label>
+                        <input required="" placeholder="" type="text" class="input" autocomplete="none">
+                        <span>Sobrenome</span>
+                    </label>
+                </div>
+            
                 <label>
-                    <input required="" placeholder="" type="text" class="input">
-                    <span>Firstname</span>
+                    <input required="" placeholder="" type="email" class="input" autocomplete="none">
+                    <span>Email</span>
                 </label>
-        
+            
                 <label>
-                    <input required="" placeholder="" type="text" class="input">
-                    <span>Lastname</span>
+                    <input required="" placeholder="" type="password" class="input" autocomplete="none">
+                    <span>Senha</span>
                 </label>
-            </div>
-        
-            <label>
-                <input required="" placeholder="" type="email" class="input">
-                <span>Email</span>
-            </label>
-        
-            <label>
-                <input required="" placeholder="" type="password" class="input">
-                <span>Password</span>
-            </label>
-            <label>
-                <input required="" placeholder="" type="password" class="input">
-                <span>Confirm password</span>
-            </label>
-            <button class="submit">Submit</button>
-            <p class="signin">Already have an acount ? <a href="#">Signin</a> </p>
-        </form>
+                <label>
+                    <input required="" placeholder="" type="password" class="input" autocomplete="none">
+                    <span>Confirme a senha</span>
+                </label>
+                <button class="submit" id="cadastroFeito">Cadastrar</button>
+                
+            </form>
+        </div>
+
+   
+        <div class="campo-login hidden">
+            <i class="fa-solid fa-circle-xmark" id="close-login"></i>
+            <form class="form">
+                <p class="title">Cadastro</p>
+                <p class="message">Preencha os campos corretamente</p>
+                    <div class="flex">
+                    <label>
+                        <input required="" placeholder="" type="text" class="input" autocomplete="none">
+                        <span>Nome</span>
+                    </label>
+            
+                    <label>
+                        <input required="" placeholder="" type="text" class="input" autocomplete="none">
+                        <span>Sobrenome</span>
+                    </label>
+                </div>
+            
+                <label>
+                    <input required="" placeholder="" type="email" class="input" autocomplete="none">
+                    <span>Email</span>
+                </label>
+            
+                <label>
+                    <input required="" placeholder="" type="password" class="input" autocomplete="none">
+                    <span>Senha</span>
+                </label>
+                <label>
+                    <input required="" placeholder="" type="password" class="input" autocomplete="none">
+                    <span>Confirme a senha</span>
+                </label>
+                <button class="submit" id="cadastroFeito">Cadastrar</button>
+                
+            </form>
+        </div>
+
+
+
+
+
+
+
 
     
-    
-    
-    
-    
-    
-    
-    
-    
-    <!--  -->
     <section class="menu-options">
         <i class="fa-solid fa-circle-xmark close-options"></i>
         <div>
@@ -85,6 +121,7 @@
         <div class="cadastro">
             <!-- <button class="button-64">Cadastrar</button> -->
             <button class="button-64" role="button"><span class="text" id="abrir-cadastro">Cadastrar</span></button>
+            <button class="button-64" role="button"><span class="text" id="abrir-login">Login</span></button>
             <!-- <i class="fa-solid fa-user"></i> -->
             <i class="fa-regular fa-user"></i>
         </div>
