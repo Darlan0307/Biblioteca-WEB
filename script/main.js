@@ -1,3 +1,19 @@
+// Digitando animação
+function ativaLetra(elemento){
+    const arrLetras = elemento.innerHTML.split('');
+    elemento.innerHTML = '';
+    arrLetras.forEach((letra,i)=>{
+        setTimeout(()=>{
+            elemento.innerHTML += letra;
+        },75*i);
+    })
+}
+
+const titulo = document.querySelector('.digitando');
+ativaLetra(titulo)
+
+setInterval(()=>ativaLetra(titulo),6500);
+
 //*slider
 var swiper = new Swiper(".swiper",{
     cssMode: true,
