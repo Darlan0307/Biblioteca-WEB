@@ -153,3 +153,10 @@ function verificarCadastro(){
 
 btnsReceberLivro.forEach(btn => btn.addEventListener('click', verificarCadastro));
 
+
+function mensagemAgradecimento(){
+    alert('Obrigado pelo interesse, fique de olho no seu e-mail')
+}
+
+document.getElementById('cadastrar').addEventListener('click',mensagemAgradecimento);
+

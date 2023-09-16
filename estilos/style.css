@@ -54,6 +54,7 @@ header{
 
 .cadastro i{
     font-size: 35px;
+    animation: eixoX 2s ease-in-out alternate infinite;
 }
 
 .botao-generico{
@@ -722,6 +723,12 @@ footer p{
     to {
       transform: scale(1.8);
       opacity: 0;
+    }
+  }
+
+  @keyframes eixoX{
+    to{
+        transform: translateX(30px);
     }
   }
 
